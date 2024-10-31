@@ -1,0 +1,166 @@
+html,
+body {
+	min-width: 950px;
+}
+
+/**
+ *   A toggleable panel, adapted from the widget panels of wp3.0 
+ **/
+
+div.panel-top h3 {
+	margin: 0;
+	padding: 5px 12px;
+	font-size: 13px;
+	height: 19px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+div.panel-top {
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	cursor: pointer;
+	font-size: 13px;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-khtml-border-top-right-radius: 8px;
+	-khtml-border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+.js .closed .panel-top {
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-khtml-border-bottom-right-radius: 8px;
+	-khtml-border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.panel-wrapper .panel-body {
+	border-width: 0 1px 1px;
+	border-style: none solid solid;
+    -moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-khtml-border-bottom-right-radius: 8px;
+	-khtml-border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.js .closed .panel-body {
+	display: none;
+}
+
+.panel .panel-body {
+	padding: 0.7em;
+}
+
+.panel-frame {
+	padding: 0;
+	margin: 10px 0 20px;
+}
+
+.panel-wrapper .panel {
+	background-color: transparent;
+	border: 0 none;
+}
+
+.panel-top-arrow {
+	float: right;
+	height: 29px;
+	width: 26px;
+}
+
+.removing-panel {
+	display: none;
+	font-weight: normal;
+	padding-left: 15px;
+	font-size: 12px;
+}
+
+.panel-wrapper .inactive {
+   background-color: #f1f1f1;
+   border-color: #ddd;
+}
+
+.panel-wrapper .panel-top {
+   background-color: #aaa;
+   background-image: url(../img/ed-bg.gif);
+   text-shadow: #fff 0 1px 0;
+   border-color: #dfdfdf;
+}
+
+.panel-top:hover, .removing-panel {
+   color: #d54e21;
+}
+
+.removing-panel span {
+   color: black;
+}
+
+.panel-wrapper .panel-top-arrow {
+    /* background: transparent url(../../../../wp-admin/images/menu-bits.gif?ver=20100610) no-repeat scroll left -109px; */
+    background: transparent url(../img/arrow-close.gif) no-repeat scroll left -109px; 
+}
+
+.panel .panel-body {
+   background-color: #fff;
+   border-color: #ddd;
+}
+
+/* other stuff */
+
+table#description-summary {
+}
+
+table#description-summary th {
+    text-align: left;
+    padding:4px; 
+    border:1px solid #ccc;
+    font-weight: bold;
+}
+
+table#description-summary td {
+    padding:4px; 
+    border:1px solid #ccc;
+}
+
+table#description-summary td.green {
+    background: #dfd;
+}
+
+table#description-summary td.yellow {
+    background: #ffd;
+}
+
+table#description-summary td.red {
+    background: #fdd;
+    font-style: italic;
+}
+
+.authorline, .authorline a {
+    font-size: 11px;
+    color: #777;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.authorline a:hover {
+    text-decoration: underline;
+}
+
+.panel-body ol {
+    margin-left: 30px;
+    list-style: decimal;
+}
+
